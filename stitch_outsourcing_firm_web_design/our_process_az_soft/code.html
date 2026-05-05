@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Process | AZ Soft Precision Engineering</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Space+Grotesk:wght@300;400;500;600;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "surface-dim": "#0b1326",
+                      "outline": "#86948a",
+                      "surface-container-lowest": "#060e20",
+                      "on-primary-fixed-variant": "#005236",
+                      "on-secondary-container": "#00424e",
+                      "on-tertiary-fixed": "#07006c",
+                      "surface-tint": "#4edea3",
+                      "surface": "#0b1326",
+                      "surface-container-high": "#222a3d",
+                      "inverse-surface": "#dae2fd",
+                      "on-secondary-fixed": "#001f26",
+                      "on-error-container": "#ffdad6",
+                      "on-secondary": "#003640",
+                      "on-tertiary": "#1000a9",
+                      "on-primary-container": "#00422b",
+                      "on-secondary-fixed-variant": "#004e5c",
+                      "inverse-primary": "#006c49",
+                      "primary-fixed-dim": "#4edea3",
+                      "secondary-fixed": "#acedff",
+                      "on-tertiary-fixed-variant": "#2f2ebe",
+                      "on-primary-fixed": "#002113",
+                      "outline-variant": "#3c4a42",
+                      "secondary-container": "#03b5d3",
+                      "on-error": "#690005",
+                      "on-background": "#dae2fd",
+                      "primary-fixed": "#6ffbbe",
+                      "surface-container": "#171f33",
+                      "tertiary-container": "#9699ff",
+                      "primary": "#4edea3",
+                      "surface-container-highest": "#2d3449",
+                      "tertiary": "#c0c1ff",
+                      "background": "#0b1326",
+                      "secondary": "#4cd7f6",
+                      "on-surface-variant": "#bbcabf",
+                      "error-container": "#93000a",
+                      "primary-container": "#10b981",
+                      "surface-bright": "#31394d",
+                      "on-primary": "#003824",
+                      "inverse-on-surface": "#283044",
+                      "on-tertiary-container": "#1d17b2",
+                      "tertiary-fixed-dim": "#c0c1ff",
+                      "surface-variant": "#2d3449",
+                      "on-surface": "#dae2fd",
+                      "error": "#ffb4ab",
+                      "surface-container-low": "#131b2e",
+                      "tertiary-fixed": "#e1e0ff",
+                      "secondary-fixed-dim": "#4cd7f6"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "spacing": {
+                      "container-max": "1280px",
+                      "stack-md": "16px",
+                      "unit": "4px",
+                      "margin": "32px",
+                      "stack-sm": "8px",
+                      "stack-lg": "32px",
+                      "gutter": "24px"
+              },
+              "fontFamily": {
+                      "body-lg": ["Inter"],
+                      "headline-lg": ["Space Grotesk"],
+                      "label-caps": ["Space Grotesk"],
+                      "body-md": ["Inter"],
+                      "headline-md": ["Space Grotesk"],
+                      "code": ["monospace"],
+                      "display": ["Space Grotesk"]
+              },
+              "fontSize": {
+                      "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                      "headline-lg": ["32px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                      "label-caps": ["12px", {"lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                      "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                      "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "500"}],
+                      "code": ["14px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                      "display": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+              }
+            },
+          },
+        }
+    </script>
+<style>
+        .glass-card {
+            background: rgba(30, 41, 59, 0.6);
+            backdrop-filter: blur(12px);
+            border-left: 1px solid rgba(255, 255, 255, 0.1);
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .technical-line {
+            background: linear-gradient(to bottom, transparent, #4edea3, transparent);
+        }
+        .glow-emerald {
+            filter: drop-shadow(0 0 8px rgba(78, 222, 163, 0.3));
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface-dim text-on-surface font-body-md selection:bg-primary-container/30">
+<header class="bg-slate-900/80 backdrop-blur-md fixed top-0 w-full z-50 border-b border-white/10 shadow-[0_0_20px_rgba(16,185,129,0.1)]">
+<nav class="flex justify-between items-center px-6 h-16 w-full max-w-container-max mx-auto">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary" data-icon="menu">menu</span>
+<span class="text-xl font-bold tracking-tighter text-white font-headline-lg">AZ Soft</span>
+</div>
+<div class="hidden md:flex items-center gap-8 font-label-caps">
+<a class="text-slate-400 hover:text-emerald-400 transition-colors" href="#">Home</a>
+<a class="text-slate-400 hover:text-emerald-400 transition-colors" href="#">Services</a>
+<a class="text-emerald-400 font-bold" href="#">Process</a>
+<a class="text-slate-400 hover:text-emerald-400 transition-colors" href="#">Contact</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-lg font-label-caps hover:brightness-110 active:scale-95 duration-200">
+                Contact
+            </button>
+</nav>
+</header>
+<main class="pt-32 pb-24">
+<!-- Hero Section -->
+<section class="max-w-container-max mx-auto px-6 mb-24">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+<div class="space-y-6">
+<span class="text-primary font-label-caps tracking-[0.2em] uppercase">The Engineering Lifecycle</span>
+<h1 class="text-display font-display leading-tight">Precision-Engineered <br/><span class="text-primary">Software Delivery</span></h1>
+<p class="text-body-lg text-outline max-w-xl">
+                        Our process is a rigorous orchestration of strategy, design, and development, designed to minimize technical debt and maximize enterprise scalability.
+                    </p>
+</div>
+<div class="relative">
+<div class="aspect-video glass-card rounded-xl overflow-hidden relative border border-white/10">
+<img class="w-full h-full object-cover opacity-60 mix-blend-luminosity" data-alt="A high-tech control room environment with multiple glowing screens displaying complex data visualizations and system diagnostics. The lighting is low-key with sharp emerald green neon highlights, creating a mood of professional precision and deep technical expertise. Transparent glass interfaces show architectural diagrams of software backend systems in a dark, atmospheric setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRcXstbsJaOBP4nF2MjAEK426DGGfTpPhWk3CGSYBOSmZcjNF8Ent3Vh2t21xDG-ftZghWVApooHGjYBUBsW8fNZGHsux3A_mGD7wWzdfV5S-BJdqMQvUm6-RPD_KimJDQZ13m8GivyDd81DzMXpRfqfC1Fx32-CNS9Yfc1cBkzyQ_qmiMS19BQA6FQp1Pdt1xbnnsvCOuKbEafszMUgrujgxsS7bREYZ3XVVxR8x6ctSQyPJFKPWiVxMxQPNlLcY3m4AGHerkdTA"/>
+<div class="absolute inset-0 bg-gradient-to-tr from-surface-dim via-transparent to-transparent"></div>
+</div>
+<div class="absolute -bottom-6 -left-6 glass-card p-6 border border-white/10 glow-emerald hidden md:block">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary" data-icon="precision_manufacturing">precision_manufacturing</span>
+</div>
+<div>
+<div class="text-white font-bold font-headline-md">99.9%</div>
+<div class="text-outline text-xs font-label-caps">Deployment Accuracy</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Timeline Section -->
+<section class="max-w-container-max mx-auto px-6 relative">
+<div class="absolute left-1/2 -translate-x-1/2 top-0 bottom-0 w-px technical-line opacity-30 hidden md:block"></div>
+<div class="space-y-24">
+<!-- Step 1 -->
+<div class="relative flex flex-col md:flex-row items-center justify-between gap-12 group">
+<div class="w-full md:w-[45%] text-right order-2 md:order-1">
+<div class="inline-block px-3 py-1 bg-primary/10 border border-primary/20 rounded-full text-primary font-label-caps mb-4">Phase 01</div>
+<h3 class="text-headline-lg font-headline-lg text-white mb-4">Strategy &amp; Discovery</h3>
+<p class="text-body-md text-outline">We begin with technical audits and stakeholder alignment. Our architects decompose complex business requirements into a rigid technical roadmap, ensuring every line of code serves a strategic objective.</p>
+<div class="mt-6 flex flex-wrap justify-end gap-2">
+<span class="px-2 py-1 bg-surface-container text-outline text-[10px] font-label-caps border border-white/5 uppercase">Requirements Analysis</span>
+<span class="px-2 py-1 bg-surface-container text-outline text-[10px] font-label-caps border border-white/5 uppercase">Tech Stack Audit</span>
+</div>
+</div>
+<div class="relative z-10 order-1 md:order-2">
+<div class="w-16 h-16 rounded-full bg-surface-container border-2 border-primary flex items-center justify-center glow-emerald transition-transform group-hover:scale-110 duration-500">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="search">search</span>
+</div>
+</div>
+<div class="w-full md:w-[45%] order-3">
+<div class="glass-card p-4 rounded-xl border border-white/10 h-40 overflow-hidden relative">
+<img class="w-full h-full object-cover opacity-40" data-alt="Close-up of a high-resolution digital display showing complex data analytics and strategy charts. The palette is dominated by deep blues and emerald greens, with clean, thin white lines representing data points. The atmosphere is professional and analytical, focused on high-level decision making in a corporate tech environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBatlCs3Ra5NTqelsDQm3IAQaz4Ngf-zYdDfG1ESYOSKAduwBF9uB1tpcpHY8M8wXpjEMel7pHQDKiiwIMxh0-VkvDe0Rc_jsHk3TftVGKNXyWFZtHE0et5qGDJudcWdZiEUEqEdTijSGr4bGKpw1k9Uiitrydr_Zd4XZUWhxZByWOhOZ1cujpvqJDdb62-HvoCGvhAnTUGDZA_Q5zs2ch2Ax_P9ev_tV3qOYIIrFbTHE8FXjN4qOZp1jzYqMTlIeRSbrjBepY-gCQ"/>
+</div>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="relative flex flex-col md:flex-row items-center justify-between gap-12 group">
+<div class="w-full md:w-[45%] order-3 md:order-1">
+<div class="glass-card p-4 rounded-xl border border-white/10 h-40 overflow-hidden relative">
+<img class="w-full h-full object-cover opacity-40" data-alt="Digital wireframes and UI prototypes displayed on a minimalist grey workspace. The design is sleek and modern, featuring clean typography and complex interactive layouts. The lighting is cool and technical, highlighting the detailed structure of a professional software user interface." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDk7nsBIjLhv5rMbz_C7za-adJuFgyTMn9f6cxLVfhKJj5sMml0L4iywvw0EFd7RU4l5Y0nbcRGUMVj8jvUsodFMahlEjU9qw-yKc_c_nK_SsnAmRloAGOwMJtjnkufqe4OPZsabiVSGUIjkbapgzjRfFss_DKPSzZuWwKA-z01DdZaY-uOCB5ChCqcnGtoriTei22xqQFSSci09XOVVH8t4VznEs-gAnBxlGq7dwGHpeIyY2wvO_wC8-zr4VIRKG3N7spZ2FAw1KI"/>
+</div>
+</div>
+<div class="relative z-10 order-1">
+<div class="w-16 h-16 rounded-full bg-surface-container border-2 border-secondary flex items-center justify-center shadow-[0_0_15px_rgba(76,215,246,0.3)] transition-transform group-hover:scale-110 duration-500">
+<span class="material-symbols-outlined text-secondary text-3xl" data-icon="settings_suggest">settings_suggest</span>
+</div>
+</div>
+<div class="w-full md:w-[45%] text-left order-2">
+<div class="inline-block px-3 py-1 bg-secondary/10 border border-secondary/20 rounded-full text-secondary font-label-caps mb-4">Phase 02</div>
+<h3 class="text-headline-lg font-headline-lg text-white mb-4">Design &amp; Prototyping</h3>
+<p class="text-body-md text-outline">UI/UX is treated as an engineering discipline. We create high-fidelity prototypes and atomic design systems that prioritize user efficiency and maintain visual consistency across large-scale platforms.</p>
+<div class="mt-6 flex flex-wrap justify-start gap-2">
+<span class="px-2 py-1 bg-surface-container text-outline text-[10px] font-label-caps border border-white/5 uppercase">High-Fi Prototyping</span>
+<span class="px-2 py-1 bg-surface-container text-outline text-[10px] font-label-caps border border-white/5 uppercase">Design Systems</span>
+</div>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="relative flex flex-col md:flex-row items-center justify-between gap-12 group">
+<div class="w-full md:w-[45%] text-right order-2 md:order-1">
+<div class="inline-block px-3 py-1 bg-primary/10 border border-primary/20 rounded-full text-primary font-label-caps mb-4">Phase 03</div>
+<h3 class="text-headline-lg font-headline-lg text-white mb-4">Agile Development</h3>
+<p class="text-body-md text-outline">Code is written in two-week sprints with mandatory peer reviews. Our focus is on modular, testable codebases that can pivot as business needs evolve without breaking core functionality.</p>
+<div class="mt-6 flex flex-wrap justify-end gap-2">
+<span class="px-2 py-1 bg-surface-container text-outline text-[10px] font-label-caps border border-white/5 uppercase">Sprint Orchestration</span>
+<span class="px-2 py-1 bg-surface-container text-outline text-[10px] font-label-caps border border-white/5 uppercase">CI/CD Integration</span>
+</div>
+</div>
+<div class="relative z-10 order-1 md:order-2">
+<div class="w-16 h-16 rounded-full bg-surface-container border-2 border-primary flex items-center justify-center glow-emerald transition-transform group-hover:scale-110 duration-500">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="account_tree">account_tree</span>
+</div>
+</div>
+<div class="w-full md:w-[45%] order-3">
+<div class="glass-card p-4 rounded-xl border border-white/10 h-40 overflow-hidden relative">
+<img class="w-full h-full object-cover opacity-40" data-alt="A dark-themed code editor window showing perfectly indented and color-coded JavaScript functions. The background is a deep navy-blue, and the code glows with soft emerald and cyan syntax highlighting. The image evokes a sense of clean, structured engineering and technical mastery." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAu21kb9Cv9wbuSHyCGHgQntQHiAfYcu0a0KuGXflTZxKhT6zCyAfCXSfh_ehzbOE2RcqwwSgO7VXN74YMphgJVD9eZoDSFtLBg7jZDKvhEnmWwdfTjJXBbnCEuzygdZ8NsTg_KmXejPUEoTbQLgajoMQWD0BGaOJloPDYfuqPB4-QKhyTXoaMR8sSniwGttn2UNyaTdai5HLtxMxGqFAy8qU15iwHkm_7kIHdRhKGo51PnsHQ7d5AEF74mADfCV8IFViQIpFPcH0I"/>
+</div>
+</div>
+</div>
+<!-- Step 4 -->
+<div class="relative flex flex-col md:flex-row items-center justify-between gap-12 group">
+<div class="w-full md:w-[45%] order-3 md:order-1">
+<div class="glass-card p-4 rounded-xl border border-white/10 h-40 overflow-hidden relative">
+<img class="w-full h-full object-cover opacity-40" data-alt="Automated testing dashboard showing a series of green checkmarks and technical pass/fail metrics. The interface is sleek and modern, rendered in a dark-mode aesthetic with vibrant emerald green indicators. The scene represents thorough quality assurance and reliability in software engineering." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMYSp35B9IySo_EyfKLZoAaluyN0CJLnv7L573s65aGX_tvt6Dz-QRFBCQsZmPqqgBXZrcwD4jcSiny5UIa9QENryJjvedUbdoBMwcOV1AoedowKji4J4ktix75nqRUN6D3d0hIs7RgWzlcIZB9BVWfPLlzwSjflWAzvlZPVhfzzme6VeVKlXiwUPqAaIHQh8FS9XSKHHkBtG4cswIk5ZDB2RriARgyHhK0KlFWJGOggHc062D8tf6ytLDDrcJET-buSknAFUDfRk"/>
+</div>
+</div>
+<div class="relative z-10 order-1">
+<div class="w-16 h-16 rounded-full bg-surface-container border-2 border-secondary flex items-center justify-center shadow-[0_0_15px_rgba(76,215,246,0.3)] transition-transform group-hover:scale-110 duration-500">
+<span class="material-symbols-outlined text-secondary text-3xl" data-icon="verified">verified</span>
+</div>
+</div>
+<div class="w-full md:w-[45%] text-left order-2">
+<div class="inline-block px-3 py-1 bg-secondary/10 border border-secondary/20 rounded-full text-secondary font-label-caps mb-4">Phase 04</div>
+<h3 class="text-headline-lg font-headline-lg text-white mb-4">QA &amp; Testing</h3>
+<p class="text-body-md text-outline">Automated unit, integration, and end-to-end tests are standard. We simulate peak loads and potential failure points to guarantee zero-defect deployment for every production release.</p>
+<div class="mt-6 flex flex-wrap justify-start gap-2">
+<span class="px-2 py-1 bg-surface-container text-outline text-[10px] font-label-caps border border-white/5 uppercase">Automated Unit Testing</span>
+<span class="px-2 py-1 bg-surface-container text-outline text-[10px] font-label-caps border border-white/5 uppercase">Load Stress Analysis</span>
+</div>
+</div>
+</div>
+<!-- Step 5 -->
+<div class="relative flex flex-col md:flex-row items-center justify-between gap-12 group">
+<div class="w-full md:w-[45%] text-right order-2 md:order-1">
+<div class="inline-block px-3 py-1 bg-primary/10 border border-primary/20 rounded-full text-primary font-label-caps mb-4">Phase 05</div>
+<h3 class="text-headline-lg font-headline-lg text-white mb-4">Deployment &amp; Support</h3>
+<p class="text-body-md text-outline">Our DevOps engineers manage seamless transitions to production environments. Post-launch, we provide proactive monitoring and iterative support to ensure continuous system health.</p>
+<div class="mt-6 flex flex-wrap justify-end gap-2">
+<span class="px-2 py-1 bg-surface-container text-outline text-[10px] font-label-caps border border-white/5 uppercase">Cloud Infrastructure</span>
+<span class="px-2 py-1 bg-surface-container text-outline text-[10px] font-label-caps border border-white/5 uppercase">24/7 Monitoring</span>
+</div>
+</div>
+<div class="relative z-10 order-1 md:order-2">
+<div class="w-16 h-16 rounded-full bg-surface-container border-2 border-primary flex items-center justify-center glow-emerald transition-transform group-hover:scale-110 duration-500">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="rocket_launch">rocket_launch</span>
+</div>
+</div>
+<div class="w-full md:w-[45%] order-3">
+<div class="glass-card p-4 rounded-xl border border-white/10 h-40 overflow-hidden relative">
+<img class="w-full h-full object-cover opacity-40" data-alt="A global network map with glowing nodes and data transmission lines crossing continents. The lighting is cinematic, featuring deep dark space colors with vibrant emerald and cyan connections. The mood is one of global connectivity and robust infrastructure, representing successful international software deployment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVb0vSvAiPX3JSpFZ1t7zEkt97almu1JT4yFprRV6AzNpmsT132MsNC_Tw5qtrV1Zd9wgn0ykG3RQadSHOhcFMt1j9q6SE7kI7aNkQAz7eGGhmbXv2xI3vXtQismc1nS7g7QZhpcCjDzmC8zyBUas-XolJZViuAPt3iWC23FWovkJV5XpwYdvXzwWhxb3nnE321Xu5QrLRx77okPezvxlNyi6GelnLL-E0IDa1pw24_lrOmYnMuW7oER5Z7_YELHJqSNRNbzAzJ5k"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Technical Standards Bento Grid -->
+<section class="max-w-container-max mx-auto px-6 mt-32">
+<h2 class="text-headline-lg font-headline-lg text-white mb-12 text-center">Engineering Standards</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="glass-card p-8 rounded-xl border border-white/10 space-y-4">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="terminal">terminal</span>
+<h4 class="text-headline-md font-headline-md text-white">Clean Architecture</h4>
+<p class="text-body-md text-outline">Strict adherence to SOLID principles and modular design ensures long-term codebase health.</p>
+</div>
+<div class="glass-card p-8 rounded-xl border border-white/10 space-y-4 md:col-span-1">
+<span class="material-symbols-outlined text-secondary text-3xl" data-icon="security">security</span>
+<h4 class="text-headline-md font-headline-md text-white">Security-First</h4>
+<p class="text-body-md text-outline">Encryption at rest and in transit, with OWASP-aligned vulnerability scanning in every build.</p>
+</div>
+<div class="glass-card p-8 rounded-xl border border-white/10 space-y-4">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="speed">speed</span>
+<h4 class="text-headline-md font-headline-md text-white">Performance Ops</h4>
+<p class="text-body-md text-outline">Rigorous optimization of latency, bundle size, and server response times for global scale.</p>
+</div>
+</div>
+</section>
+</main>
+<footer class="bg-slate-950 w-full py-12 px-6 md:px-12 grid grid-cols-1 md:grid-cols-4 gap-8 border-t border-white/10 font-space-grotesk text-sm">
+<div class="space-y-4">
+<span class="text-lg font-bold text-white font-headline-lg">AZ Soft</span>
+<p class="text-slate-500 leading-relaxed">Precision Engineering for <br/>Global Enterprise.</p>
+</div>
+<div class="space-y-4">
+<h5 class="text-white font-bold uppercase tracking-widest text-[10px]">Solutions</h5>
+<ul class="space-y-2">
+<li><a class="text-slate-500 hover:text-emerald-400 transition-colors" href="#">Web Development</a></li>
+<li><a class="text-slate-500 hover:text-emerald-400 transition-colors" href="#">Mobile Apps</a></li>
+<li><a class="text-slate-500 hover:text-emerald-400 transition-colors" href="#">UI/UX Design</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<h5 class="text-white font-bold uppercase tracking-widest text-[10px]">Infrastructure</h5>
+<ul class="space-y-2">
+<li><a class="text-slate-500 hover:text-emerald-400 transition-colors" href="#">Backend Systems</a></li>
+<li><a class="text-slate-500 hover:text-emerald-400 transition-colors" href="#">DevOps</a></li>
+<li><a class="text-slate-500 hover:text-emerald-400 transition-colors" href="#">QA &amp; Testing</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<h5 class="text-white font-bold uppercase tracking-widest text-[10px]">Connect</h5>
+<ul class="space-y-2">
+<li><a class="text-slate-500 hover:text-emerald-400 transition-colors" href="#">Contact Us</a></li>
+<li><a class="text-slate-500 hover:text-emerald-400 transition-colors" href="#">LinkedIn</a></li>
+<li><a class="text-slate-500 hover:text-emerald-400 transition-colors" href="#">Twitter</a></li>
+</ul>
+</div>
+<div class="md:col-span-4 pt-8 mt-8 border-t border-white/5 text-center text-slate-600">
+            © 2024 AZ Soft. Precision Engineering for Global Enterprise.
+        </div>
+</footer>
+</body></html>

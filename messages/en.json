@@ -1,0 +1,72 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "hero": {
+    "badge": "Professional Outsourcing",
+    "title": "Scale Your Business with Expert Teams",
+    "subtitle": "AZ Outsourcing connects you with skilled professionals in software development, design, and business process outsourcing.",
+    "cta": "Get Started",
+    "ctaSecondary": "Learn More"
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "End-to-end outsourcing solutions tailored to your needs",
+    "items": {
+      "software": {
+        "title": "Software Development",
+        "description": "Custom web and mobile applications built by experienced engineers."
+      },
+      "design": {
+        "title": "UI/UX Design",
+        "description": "User-centered design that drives engagement and conversions."
+      },
+      "bpo": {
+        "title": "Business Process Outsourcing",
+        "description": "Streamline operations with our dedicated BPO teams."
+      },
+      "qa": {
+        "title": "Quality Assurance",
+        "description": "Comprehensive testing to ensure flawless product delivery."
+      },
+      "consulting": {
+        "title": "IT Consulting",
+        "description": "Strategic technology advice to accelerate your digital transformation."
+      }
+    }
+  },
+  "about": {
+    "title": "Why Choose AZ Outsourcing?",
+    "subtitle": "We deliver excellence through dedicated teams and proven processes",
+    "stats": {
+      "clients": "10+ Clients",
+      "projects": "50+ Projects",
+      "years": "4+ Years of Experience"
+    }
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "subtitle": "Ready to scale your team? Let's talk.",
+    "form": {
+      "name": "Your Name",
+      "email": "Email Address",
+      "company": "Company Name",
+      "service": "Service Needed",
+      "message": "Tell us about your project",
+      "submit": "Send Message",
+      "success": "Message sent! We'll be in touch shortly.",
+      "error": "Something went wrong. Please try again."
+    }
+  },
+  "footer": {
+    "description": "Professional outsourcing solutions for businesses worldwide.",
+    "rights": "All rights reserved.",
+    "links": {
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service"
+    }
+  }
+}

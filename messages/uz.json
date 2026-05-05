@@ -1,0 +1,72 @@
+{
+  "nav": {
+    "home": "Bosh sahifa",
+    "services": "Xizmatlar",
+    "about": "Biz haqimizda",
+    "contact": "Aloqa"
+  },
+  "hero": {
+    "badge": "Professional Autsorsing",
+    "title": "Biznesingizni Mutaxassis Jamoalar Bilan Kengaytiring",
+    "subtitle": "AZ Outsourcing sizni dasturiy ta'minot ishlab chiqish, dizayn va biznes jarayonlari autsorsingingida malakali mutaxassislar bilan bog'laydi.",
+    "cta": "Boshlash",
+    "ctaSecondary": "Ko'proq bilish"
+  },
+  "services": {
+    "title": "Xizmatlarimiz",
+    "subtitle": "Ehtiyojlaringizga moslashtirilgan to'liq autsorsing yechimlari",
+    "items": {
+      "software": {
+        "title": "Dasturiy Ta'minot Ishlab Chiqish",
+        "description": "Tajribali muhandislar tomonidan yaratilgan maxsus veb va mobil ilovalar."
+      },
+      "design": {
+        "title": "UI/UX Dizayn",
+        "description": "Foydalanuvchiga yo'naltirilgan dizayn, jalb qilish va konversiyalarni oshiradi."
+      },
+      "bpo": {
+        "title": "Biznes Jarayonlari Autsorsing",
+        "description": "Bizning maxsus BPO jamoalarimiz bilan operatsiyalarni optimallashtiring."
+      },
+      "qa": {
+        "title": "Sifat Nazorati",
+        "description": "Mahsulotni mukammal yetkazib berish uchun har tomonlama sinov."
+      },
+      "consulting": {
+        "title": "IT Konsalting",
+        "description": "Raqamli transformatsiyani tezlashtirish uchun strategik texnologik maslahat."
+      }
+    }
+  },
+  "about": {
+    "title": "Nima Uchun AZ Outsourcing?",
+    "subtitle": "Biz maxsus jamoalar va tasdiqlangan jarayonlar orqali mukammallikni ta'minlaymiz",
+    "stats": {
+      "clients": "10+ Mijozlar",
+      "projects": "50+ Loyihalar",
+      "years": "4+ Yillik tajriba"
+    }
+  },
+  "contact": {
+    "title": "Bog'laning",
+    "subtitle": "Jamoangizni kengaytirishga tayyormisiz? Keling, gaplashamiz.",
+    "form": {
+      "name": "Ismingiz",
+      "email": "Elektron pochta",
+      "company": "Kompaniya nomi",
+      "service": "Kerakli xizmat",
+      "message": "Loyihangiz haqida aytib bering",
+      "submit": "Xabar yuborish",
+      "success": "Xabar yuborildi! Tez orada siz bilan bog'lanamiz.",
+      "error": "Xatolik yuz berdi. Qaytadan urinib ko'ring."
+    }
+  },
+  "footer": {
+    "description": "Dunyo bo'ylab bizneslar uchun professional autsorsing yechimlari.",
+    "rights": "Barcha huquqlar himoyalangan.",
+    "links": {
+      "privacy": "Maxfiylik siyosati",
+      "terms": "Foydalanish shartlari"
+    }
+  }
+}

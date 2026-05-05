@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-dim": "#0b1326",
+                    "outline": "#86948a",
+                    "surface-container-lowest": "#060e20",
+                    "on-primary-fixed-variant": "#005236",
+                    "on-secondary-container": "#00424e",
+                    "on-tertiary-fixed": "#07006c",
+                    "surface-tint": "#4edea3",
+                    "surface": "#0b1326",
+                    "surface-container-high": "#222a3d",
+                    "inverse-surface": "#dae2fd",
+                    "on-secondary-fixed": "#001f26",
+                    "on-error-container": "#ffdad6",
+                    "on-secondary": "#003640",
+                    "on-tertiary": "#1000a9",
+                    "on-primary-container": "#00422b",
+                    "on-secondary-fixed-variant": "#004e5c",
+                    "inverse-primary": "#006c49",
+                    "primary-fixed-dim": "#4edea3",
+                    "secondary-fixed": "#acedff",
+                    "on-tertiary-fixed-variant": "#2f2ebe",
+                    "on-primary-fixed": "#002113",
+                    "outline-variant": "#3c4a42",
+                    "secondary-container": "#03b5d3",
+                    "on-error": "#690005",
+                    "on-background": "#dae2fd",
+                    "primary-fixed": "#6ffbbe",
+                    "surface-container": "#171f33",
+                    "tertiary-container": "#9699ff",
+                    "primary": "#4edea3",
+                    "surface-container-highest": "#2d3449",
+                    "tertiary": "#c0c1ff",
+                    "background": "#0b1326",
+                    "secondary": "#4cd7f6",
+                    "on-surface-variant": "#bbcabf",
+                    "error-container": "#93000a",
+                    "primary-container": "#10b981",
+                    "surface-bright": "#31394d",
+                    "on-primary": "#003824",
+                    "inverse-on-surface": "#283044",
+                    "on-tertiary-container": "#1d17b2",
+                    "tertiary-fixed-dim": "#c0c1ff",
+                    "surface-variant": "#2d3449",
+                    "on-surface": "#dae2fd",
+                    "error": "#ffb4ab",
+                    "surface-container-low": "#131b2e",
+                    "tertiary-fixed": "#e1e0ff",
+                    "secondary-fixed-dim": "#4cd7f6"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "container-max": "1280px",
+                    "stack-md": "16px",
+                    "unit": "4px",
+                    "margin": "32px",
+                    "stack-sm": "8px",
+                    "stack-lg": "32px",
+                    "gutter": "24px"
+            },
+            "fontFamily": {
+                    "body-lg": ["Inter"],
+                    "headline-lg": ["Space Grotesk"],
+                    "label-caps": ["Space Grotesk"],
+                    "body-md": ["Inter"],
+                    "headline-md": ["Space Grotesk"],
+                    "code": ["monospace"],
+                    "display": ["Space Grotesk"]
+            },
+            "fontSize": {
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "headline-lg": ["32px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                    "label-caps": ["12px", {"lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "500"}],
+                    "code": ["14px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                    "display": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .glass-card {
+            background: rgba(30, 41, 59, 0.6);
+            backdrop-filter: blur(12px);
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            border-left: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .technical-border {
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .glow-emerald {
+            filter: drop-shadow(0 0 8px rgba(16, 185, 129, 0.2));
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface-dim text-on-surface font-body-md selection:bg-primary/30">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-slate-900/80 backdrop-blur-md border-b border-white/10 shadow-[0_0_20px_rgba(16,185,129,0.1)]">
+<div class="flex justify-between items-center px-6 h-16 w-full max-w-7xl mx-auto">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-emerald-500" data-icon="menu">menu</span>
+<span class="text-xl font-bold tracking-tighter text-white font-space-grotesk tracking-tight">AZ Soft</span>
+</div>
+<nav class="hidden md:flex gap-8 items-center">
+<a class="text-emerald-400 font-bold font-space-grotesk tracking-tight hover:text-emerald-400 transition-colors" href="#">Home</a>
+<a class="text-slate-400 font-space-grotesk tracking-tight hover:text-emerald-400 transition-colors" href="#">Services</a>
+<a class="text-slate-400 font-space-grotesk tracking-tight hover:text-emerald-400 transition-colors" href="#">Process</a>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-DEFAULT font-label-caps active:scale-95 duration-200">Contact</button>
+</nav>
+</div>
+</header>
+<main class="pt-16">
+<!-- Hero Section -->
+<section class="relative min-h-[795px] flex items-center justify-center overflow-hidden px-6">
+<div class="absolute inset-0 z-0">
+<div class="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_30%_30%,_rgba(16,185,129,0.08)_0%,_transparent_50%)]"></div>
+<div class="absolute bottom-0 right-0 w-full h-full bg-[radial-gradient(circle_at_70%_70%,_rgba(76,215,246,0.05)_0%,_transparent_50%)]"></div>
+</div>
+<div class="relative z-10 max-w-5xl text-center space-y-stack-lg">
+<div class="inline-flex items-center gap-2 px-3 py-1 technical-border rounded-full bg-surface-container-low/50 mb-4">
+<span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+<span class="font-label-caps text-emerald-400 uppercase">System Status: Optimal</span>
+</div>
+<h1 class="font-display text-display text-white max-w-4xl mx-auto">
+                    Your <span class="text-primary glow-emerald">Technology Partner</span> — We Build World-Class Digital Products
+                </h1>
+<p class="font-body-lg text-body-lg text-outline max-w-2xl mx-auto">
+                    From startups to enterprises, we deliver end-to-end engineering excellence with precision, scale, and technical integrity.
+                </p>
+<div class="flex flex-col sm:flex-row gap-gutter justify-center pt-8">
+<button class="px-8 py-4 bg-gradient-to-r from-primary to-secondary text-on-primary font-label-caps text-sm rounded-DEFAULT glow-emerald active:scale-95 transition-all">
+                        INITIATE PROJECT
+                    </button>
+<button class="px-8 py-4 technical-border bg-transparent text-secondary font-label-caps text-sm rounded-DEFAULT hover:bg-secondary/5 active:scale-95 transition-all">
+                        VIEW CAPABILITIES
+                    </button>
+</div>
+</div>
+</section>
+<!-- Key Metrics Section -->
+<section class="py-24 px-6 max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<div class="glass-card p-10 technical-border group">
+<div class="flex flex-col gap-2">
+<span class="font-display text-5xl text-primary font-bold">7</span>
+<span class="font-label-caps text-outline tracking-widest uppercase">Core Services</span>
+</div>
+<div class="mt-4 h-0.5 w-0 group-hover:w-full bg-primary transition-all duration-500"></div>
+</div>
+<div class="glass-card p-10 technical-border group">
+<div class="flex flex-col gap-2">
+<span class="font-display text-5xl text-secondary font-bold">Full</span>
+<span class="font-label-caps text-outline tracking-widest uppercase">Stack Expertise</span>
+</div>
+<div class="mt-4 h-0.5 w-0 group-hover:w-full bg-secondary transition-all duration-500"></div>
+</div>
+<div class="glass-card p-10 technical-border group">
+<div class="flex flex-col gap-2">
+<span class="font-display text-5xl text-white font-bold">1</span>
+<span class="font-label-caps text-outline tracking-widest uppercase">Trusted Partner</span>
+</div>
+<div class="mt-4 h-0.5 w-0 group-hover:w-full bg-white transition-all duration-500"></div>
+</div>
+</div>
+</section>
+<!-- Our Expertise Section (Bento Grid) -->
+<section class="py-24 px-6 bg-surface-container-lowest/50">
+<div class="max-w-7xl mx-auto">
+<div class="mb-16">
+<h2 class="font-headline-lg text-headline-lg text-white mb-4">Our Expertise</h2>
+<div class="w-12 h-1 bg-primary"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6 h-auto md:h-[600px]">
+<div class="md:col-span-8 glass-card technical-border p-8 relative overflow-hidden flex flex-col justify-end group">
+<div class="absolute inset-0 z-0 grayscale opacity-30 group-hover:grayscale-0 transition-all duration-700">
+<img alt="Backend Infrastructure" class="w-full h-full object-cover" data-alt="A high-tech server room with glowing green and cyan LED lights reflecting off sleek black hardware surfaces. The atmosphere is professional and sophisticated, representing high-performance backend infrastructure and data security. Meticulous cable management and industrial design emphasize the precision engineering of a modern enterprise data center." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBsQc604JXU3wzu-jGPuWvOU31EqfCPuE4_KWwCMkkm2sy9RCyDzLreYbm-Zm3HyjwqSscmsp-VgdmTGhWYl3b9p3nY1uAxegwVuLX93M1Cobj8oxg8MitEoo-lEV5ae8FQ_xHeK3FIrN9GHsjbSCjewOiiaH3h0czJYd0O05uMvTP_7uxj7vzf4BPXqGxmK4zgUUNl1D-sutyj1wbqPhwoySX5yhySpRj9s_fzmUPKdft9VXvXKCdDv3yIlW1pqk64AecGDul5wcE"/>
+</div>
+<div class="relative z-10">
+<h3 class="font-headline-md text-headline-md text-white mb-2">Architectural Integrity</h3>
+<p class="text-outline max-w-lg">Scalable, cloud-native backend systems designed for high-availability and zero-downtime performance.</p>
+</div>
+</div>
+<div class="md:col-span-4 glass-card technical-border p-8 flex flex-col justify-between group">
+<div class="space-y-4">
+<span class="material-symbols-outlined text-secondary text-4xl" data-icon="terminal">terminal</span>
+<h3 class="font-headline-md text-headline-md text-white">Rapid Prototyping</h3>
+</div>
+<p class="text-outline">Accelerated development cycles for MVPs that don't compromise on technical debt or quality.</p>
+</div>
+<div class="md:col-span-4 glass-card technical-border p-8 flex flex-col justify-between group">
+<div class="space-y-4">
+<span class="material-symbols-outlined text-primary text-4xl" data-icon="view_quilt">view_quilt</span>
+<h3 class="font-headline-md text-headline-md text-white">UI/UX Precision</h3>
+</div>
+<p class="text-outline">Interfaces crafted with mathematical alignment and aerospace-grade responsiveness.</p>
+</div>
+<div class="md:col-span-8 glass-card technical-border p-8 relative overflow-hidden flex flex-col justify-end group">
+<div class="absolute inset-0 z-0 grayscale opacity-20 group-hover:grayscale-0 transition-all duration-700">
+<img alt="Digital Engineering" class="w-full h-full object-cover" data-alt="Close-up of a high-resolution digital display showing complex lines of code and technical schematics in vibrant emerald and cyan. Soft blurred background of a modern tech workspace with glass surfaces and ambient lighting. The visual style is minimal and high-end, focusing on the clarity and precision of digital craftsmanship." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4Y4ZPQ7NkFXKH7D-hgzQTMXLYdwaph9QYSFxbqopKTZfbY7nEUzeQXTeOpt_mjH89gOq6vHZnfOe4UwCPgOvQ5DeJdwUfvmBF3nvQ7sZ213kKDUTcF8Mo44f_igOQ76ORoZIEglB9AIjfSYaAnxmzBKLHbE_ntlReMyFs3a4CsbM_YXKC4vKBy9nmskJIC_icqf_mVorJX_nOuaGbBSb1NcAh1K9Mc7AB7tg32Hvwm_6ETRmu_9igEel-ItDt-1QDMeXjb8rFFFs"/>
+</div>
+<div class="relative z-10 text-right">
+<h3 class="font-headline-md text-headline-md text-white mb-2">Strategic Outsourcing</h3>
+<p class="text-outline inline-block max-w-md">Seamlessly integrating with your team to extend capabilities and accelerate roadmap execution.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Start a Project CTA -->
+<section class="py-32 px-6 relative overflow-hidden">
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-primary/5 rounded-full blur-[120px]"></div>
+<div class="max-w-4xl mx-auto text-center relative z-10 space-y-stack-lg">
+<h2 class="font-display text-display text-white">Ready to Engineer Excellence?</h2>
+<p class="font-body-lg text-body-lg text-outline">Connect with our solutions architects to discuss your project requirements and roadmap.</p>
+<div class="pt-8">
+<button class="group inline-flex items-center gap-4 px-12 py-6 bg-surface-container-highest technical-border text-primary font-headline-md rounded-DEFAULT hover:border-primary transition-all active:scale-95">
+                        Start a Project
+                        <span class="material-symbols-outlined group-hover:translate-x-2 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full border-t border-white/10 bg-slate-950 font-space-grotesk text-sm">
+<div class="w-full py-12 px-6 md:px-12 grid grid-cols-1 md:grid-cols-4 gap-8 max-w-7xl mx-auto">
+<div class="col-span-1 md:col-span-1">
+<div class="text-lg font-bold text-white mb-4">AZ Soft</div>
+<p class="text-slate-500 leading-relaxed">Precision Engineering for Global Enterprise. Building the next generation of digital infrastructure.</p>
+</div>
+<div>
+<h4 class="text-white font-bold mb-6">Services</h4>
+<ul class="space-y-3">
+<li><a class="text-slate-500 hover:text-emerald-400 transition-colors" href="#">Web Development</a></li>
+<li><a class="text-slate-500 hover:text-emerald-400 transition-colors" href="#">Mobile Apps</a></li>
+<li><a class="text-slate-500 hover:text-emerald-400 transition-colors" href="#">UI/UX Design</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-white font-bold mb-6">Capabilities</h4>
+<ul class="space-y-3">
+<li><a class="text-slate-500 hover:text-emerald-400 transition-colors" href="#">Backend Systems</a></li>
+<li><a class="text-slate-500 hover:text-emerald-400 transition-colors" href="#">DevOps</a></li>
+<li><a class="text-slate-500 hover:text-emerald-400 transition-colors" href="#">QA &amp; Testing</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-white font-bold mb-6">Connect</h4>
+<ul class="space-y-3">
+<li><a class="text-slate-500 hover:text-emerald-400 transition-colors" href="#">Contact Us</a></li>
+<li><a class="text-slate-500 hover:text-emerald-400 transition-colors" href="#">LinkedIn</a></li>
+<li><a class="text-slate-500 hover:text-emerald-400 transition-colors" href="#">Twitter / X</a></li>
+</ul>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-6 py-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-slate-500">© 2024 AZ Soft. Precision Engineering for Global Enterprise.</p>
+<div class="flex gap-6">
+<a class="text-slate-600 hover:text-white transition-colors" href="#">Privacy Policy</a>
+<a class="text-slate-600 hover:text-white transition-colors" href="#">Terms of Service</a>
+</div>
+</div>
+</footer>
+</body></html>
